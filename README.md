@@ -6,4 +6,4 @@ I am planning to use python to build a more refined version of my brickbuster ga
 
 ## Updates
 
-@Version 06/27/22 : 
+@Version 06/27/22 : I just put together the basic tkinter pieces and imports. Not much was completed. 
