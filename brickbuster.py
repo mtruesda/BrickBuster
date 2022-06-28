@@ -1,26 +1,26 @@
+# 
+# Author: Myron Truesdale
+# @@Version 06/27/22
+# BrickBuster
+#
+
 # imports
-import pygame
+from tkinter import *
+from tkinter import ttk
 
-def main():
-    # initialize the module
-    pygame.init()
-    # set window caption
-    pygame.set_caption("blockbuster")
-    # set window icon
-    # pygame.set_icon("file")
-    # create a surface on screen that has the size of 240 x 180
-    screen = pygame.display.set_mode((240,180))
-    # main loop controller
-    running = true
+# use object to run the GUI
+class game():
+    def __init__(self):
+        # initialize the window 
+        self.root = Tk()
+        self.root.geometry = ("1400x1200")
+        self.root.title("Brickbuster")
 
-    # main loop
-    while running:
-        # event handling, gets all event from the event queue
-        for event in pygame.event.get():
-            # only do something if the event is of type QUIT
-            if event.type == pygame.QUIT:
-                # change the value to False, to exit the main loop
-                running = False
+        mainPage()
 
-main()
+    def mainPage(self):
+        self.mainLabel = ttk.Label(self.root, text='BrickBuster', font=("Calibri,26"), padding="10px")
+        
+
+game()
 
