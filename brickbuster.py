@@ -13,13 +13,20 @@ class game():
     def __init__(self):
         # initialize the window 
         self.root = Tk()
-        self.root.geometry = ("1400x1200")
+        self.root.geometry("550x650")
         self.root.title("Brickbuster")
 
-        mainPage()
+        self.mainPage()
 
     def mainPage(self):
-        self.mainLabel = ttk.Label(self.root, text='BrickBuster', font=("Calibri,26"), padding="10px")
+        self.mainLabel = ttk.Label(self.root, text='BrickBuster', font=("Calibri,26"))
+        self.mainLabel.pack()
+
+        self.playButton = ttk.Button(self.root, text='PLAY')
+        self.playButton.pack()
+        
+        self.root.mainloop()
+        
         
 
 game()
